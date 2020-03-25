@@ -1,5 +1,5 @@
 FROM tomcat:8.0-alpine
-RUN useradd tspring
+RUN adduser tspring
 RUN chown tspring:tspring /usr/local/tomcat
 USER tspring
 LABEL maintainer="mohit.dhingra@in.ibm.com"
