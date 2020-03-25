@@ -1,5 +1,5 @@
 FROM tomcat:8.0-alpine
 LABEL maintainer="mohit.dhingra@in.ibm.com"
-ADD deployments/ROOT.war /usr/local/tomcat/webapps/
+ADD target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/spring3.war
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
